@@ -6,7 +6,7 @@
 //
 
 import Foundation
- 
+
 class HomeMockView: HomeViewProtocol {
 
     var presenter: HomePresenterProtocol!

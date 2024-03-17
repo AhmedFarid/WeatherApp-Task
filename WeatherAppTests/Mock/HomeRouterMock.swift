@@ -6,7 +6,7 @@
 //
 
 import Foundation
- 
+
 class HomeRouterMock: HomeRouterProtocol {
     func navigateToDetailsView(withHomeData: HomeData) {
     }

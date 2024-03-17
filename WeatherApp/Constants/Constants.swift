@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct Constants {
+    static let baseURL = "http://api.weatherapi.com/v1/"
+
+    static let currentEndpoint = baseURL + "forecast.json"
+}
+ 

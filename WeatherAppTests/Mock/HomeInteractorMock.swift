@@ -18,4 +18,13 @@ class HomeInteractorMock: HomeInteractorInPutProtocol {
         let homeEntity = HomeEntity(location: location, current: homeData, forecast: forecast)
         presenter?.getHomeDataSuccessfully(home: homeEntity)
     }
+
+    var forecast: [Forecastday]?
+    func saveForecastData(forecast: [Forecastday]) {
+        self.forecast = forecast
+    }
+
+    func getForecastData() -> [Forecastday]{
+        return forecast ?? []
+    }
 }
